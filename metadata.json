@@ -1,0 +1,8 @@
+{
+  "name": "HMU — Hostel Management System",
+  "description": "Hostel Management System for IIT Bombay across Hall Managers, HCU, Associate Dean SA, Departments, IRCC, and Students.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

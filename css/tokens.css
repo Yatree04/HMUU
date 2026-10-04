@@ -1,0 +1,76 @@
+/* ==========================================================================
+   Design tokens — extracted from Figma "HM Intern Work" (W8pJfHJeop1TZinVuB2IP1),
+   section "Hostel Manager" (238:3312). Variable names mirror the Figma variables.
+   If you change a value here, change it in Figma too (or vice versa).
+   ========================================================================== */
+:root {
+  /* Surfaces */
+  --primary-bg: #f5f9f8;        /* panels, map floor, cards-in-cards */
+  --secondary-bg: #ffffff;      /* page + cards */
+  --white: #ffffff;
+
+  /* Brand */
+  --primary-cta-bg: #019487;    /* active nav pill, primary button, links */
+  --primary-cta-hover: #017d72;
+  --colored-subheading: #57b8ab;/* "Hostel Management" wordmark */
+  --badge-type1: #b8eae2;       /* Day / Month / Year pills */
+  --badge-1: #103d37;           /* text on badge-type1 */
+
+  /* Text */
+  --heading: #000000;
+  --body: #1e1f24;
+  --body-2: #80828d;            /* labels ("Total Rooms") */
+  --unselected-text: #80828d;
+  --grey-subheading: #36363c;
+  --nav-text: #1f1f1f;          /* Figma var "500" */
+
+  /* Strokes */
+  --secondary-cta-border: #b9bbc6; /* card + table outlines, secondary button */
+  --secondary-cta-hover: #eff0f3;   /* table header band, zebra rows, table footer (293:10039) */
+  --light-stroke: #e0e1e6;         /* nav pills, dividers */
+
+  /* Hostel map room states (Bookings 1 · 238:5393) */
+  --room-empty-bg: #f5f9f8;     --room-empty-stroke: #019487;
+  --room-allotted-bg: #8eddd6;  --room-allotted-stroke: #00b1a1;
+  --room-guest-bg: #ffffff;     --room-guest-stroke: #57b8ab;   /* legend "Guests" */
+  --room-maint-bg: #ffab9a;     --room-maint-stroke: #ff8787;
+  --room-common-bg: #d0ede6;    /* stairs / pantry / washroom blocks */
+  --room-service-bg: #cecece;   /* service / lift block */
+
+  /* Feedback (not in Figma yet — added for states the designs don't cover) */
+  --danger: #c2410c;
+  --danger-bg: #fff1ec;
+  --warning-bg: #fff7e0;
+  --warning: #8a5a00;
+  --info: #2563eb;              /* "Occupied" status badge in profile (293:10380) */
+  --info-bg: #eef4ff;
+
+  /* Type
+     Figma uses Satoshi (UI) + Roboto (numbers/table data, M3 "display-medium").
+     Satoshi is served by Fontshare; DM Sans is the fallback when it can't load. */
+  --font-ui: "Satoshi", "DM Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-data: "Roboto", ui-sans-serif, system-ui, sans-serif;
+  --tracking: -0.3px;
+
+  --fs-display: 45px;   /* stat numbers (M3 display-medium) */
+  --fs-stat-sm: 24px;   /* secondary stats */
+  --fs-h1: 24px;        /* page titles "Residents", "Requests" */
+  --fs-h2: 20px;        /* "Hostel 17," */
+  --fs-h3: 16px;        /* H3/M, H3/B — nav, panel titles */
+  --fs-body1: 12px;     /* Body1/M */
+  --fs-body2: 10px;     /* Body2/M — meta lines */
+  --fs-micro: 8px;      /* "Details" links */
+
+  /* Shape */
+  --r-card: 12px;
+  --r-pill: 24px;
+  --r-btn: 6px;
+  --r-room: 4.8px;
+
+  /* Layout */
+  --sidebar-w: 189px;
+  --gutter: 32px;
+  --shadow-card: 0 2px 10px rgba(16, 61, 55, 0.08);
+  --shadow-pop: 0 12px 40px rgba(16, 61, 55, 0.16);
+}
+

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>HMU — Hostel Management System</title>
+  <meta name="description" content="Hostel Management System for IIT Bombay across Hall Managers, HCU, Associate Dean SA, Departments, IRCC, and Students.">
+  <meta property="og:title" content="HMU — Hostel Management System">
+  <meta property="og:description" content="Hostel Management System for IIT Bombay across Hall Managers, HCU, Associate Dean SA, Departments, IRCC, and Students.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500;9..40,700&family=Roboto:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/portals.css">
+</head>
+<body>
+  <div id="app"></div>
+
+  <!-- Order matters: plain scripts sharing the global `HMS` namespace, no build step -->
+  <!-- Core: data and helpers every portal shares -->
+  <script src="js/core/date.js"></script>
+  <script src="js/core/floorplan.js"></script>
+  <script src="js/core/campus.js"></script>
+  <script src="js/core/seed.js"></script>
+  <script src="js/core/store.js"></script>
+  <script src="js/core/ui.js"></script>
+  <script src="js/core/shared.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/core/list.js"></script>
+
+  <!-- Hall Manager (Figma "Hostel Manager" section) -->
+  <script src="js/portals/hm/dashboard.js"></script>
+  <script src="js/portals/hm/residents.js"></script>
+  <script src="js/portals/hm/requests.js"></script>
+  <script src="js/portals/hm/map.js"></script>
+  <script src="js/portals/hm/actions.js"></script>
+  <script src="js/portals/hm/portal.js"></script>
+
+  <!-- Requesters, approvers, HCU (FigJam IA) -->
+  <script src="js/portals/requester.js"></script>
+  <script src="js/portals/student.js"></script>
+  <script src="js/portals/dept.js"></script>
+  <script src="js/portals/ircc.js"></script>
+  <script src="js/portals/dean.js"></script>
+  <script src="js/portals/hcu.js"></script>
+
+  <script>HMS.app.start();</script>
+</body>
+</html>
